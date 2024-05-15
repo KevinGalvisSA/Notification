@@ -2,56 +2,23 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-*{
-    margin: 0;
-    padding: 0 ;
-}
-
 body {
-    display: grid;
-    width:100% !important;
-    height:100vh;
-    background: white;
-    grid-template-columns:  1fr 1.2fr 1fr  ;
-    grid-template-rows: 0.3fr 3fr 0.8fr 0.6fr 1fr 0.5fr 0.3fr;   
-    grid-template-areas: 
-    " . container . "
-    " . container . "
-    " . container . "
-    " . container . "
-    " . container . "
-    " . container . "
-    " . container .  "
-}
-
-my-element{
-    grid-area: container;
-}
-
-@media screen and (max-width: 768px) {
-    /* Estilos para dispositivos con un ancho máximo de 768px (dispositivos móviles) */
-    body {
-        grid-template-columns: 1fr; 
-        grid-template-areas: 
-        " container "
-        " container "
-        " container "
-        " container "
-        " container "
-        " container "
-        " container "
-        " container "
-    }
-    /* Ajusta otros estilos según sea necesario */
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
